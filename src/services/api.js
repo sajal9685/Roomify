@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
 
-  baseURL: "https://roomify-server.onrender.com/"
+  baseURL: "https://roomify-server.onrender.com/api"
 
 });
 
