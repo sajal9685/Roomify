@@ -3,6 +3,8 @@
 ROOMIFY is an online PG, hostel, and room booking web application. This frontend is built with React and connects to the ROOMIFY backend API for authentication, room listings, bookings, admin room management, image uploads, and dealer verification.
 
 ## Features
+<img width="1920" height="1080" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/a4907bc4-20ca-4c7e-9d26-d846c488ad93" />
+<img width="1903" height="912" alt="Screenshot 2026-05-23 161455" src="https://github.com/user-attachments/assets/1d1275e5-3a19-43b0-b23e-c7728cb12b43" />
 
 - User registration and login
 - JWT-based authentication
