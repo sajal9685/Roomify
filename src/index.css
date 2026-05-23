@@ -1,1 +1,105 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --navy:     #0F1F2E;
+  --navy-mid: #1A3145;
+  --navy-soft:#213448;
+  --terra:    #C2714F;
+  --terra-lt: #D4896A;
+  --gold:     #C9A84C;
+  --gold-lt:  #E2C97E;
+  --cream:    #F5F0E8;
+  --cream-dk: #EDE6D6;
+  --white:    #FDFAF6;
+  --gray:     #8A8A8A;
+  --gray-lt:  #C8C4BC;
+  --text:     #1A1A1A;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Utility */
+.page-bg       { background: var(--cream); min-height: 100vh; }
+.container     { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+/* Buttons */
+.btn-primary {
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--terra); transform: translateY(-1px); }
+
+.btn-danger {
+  background: transparent;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-danger:hover { background: #c0392b; color: white; }
+
+/* Inputs */
+.field {
+  width: 100%;
+  border: 1px solid var(--gray-lt);
+  background: var(--white);
+  padding: 0.85rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  border-radius: 2px;
+}
+.field:focus { border-color: var(--terra); }
+.field::placeholder { color: var(--gray); }
+
+/* Cards */
+.card {
+  background: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(15,31,46,0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover { box-shadow: 0 8px 32px rgba(15,31,46,0.14); transform: translateY(-3px); }
+
+/* Status badges */
+.badge-booked   { color: #2e7d32; font-weight: 600; }
+.badge-canceled { color: #c62828; font-weight: 600; }
+
+/* Section divider */
+.divider {
+  width: 56px; height: 2px;
+  background: var(--gold);
+  margin: 0.75rem 0 1.5rem 0;
+}

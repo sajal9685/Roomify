@@ -11,6 +11,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminRoute from "./components/AdminRoute";
 import AddRoom from "./pages/AddRoom";
+import EditRoom from "./pages/EditRoom";
 
 function App() {
 
@@ -46,7 +47,14 @@ function App() {
     </AdminRoute>
   }
 />                    
-
+<Route
+  path="/edit-room/:id"
+  element={
+    <AdminRoute>
+      <EditRoom />
+    </AdminRoute>
+  }
+/>
 <Route
   path="/admin"
   element={
